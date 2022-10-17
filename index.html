@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="3D viewer prototype test model">
+    <link rel="stylesheet" href="style.css">
+    <title>3D model viewer prototype</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <item id="left-item">
+            <a href="index.html">
+                <img id="logo" src="Assets/banner-device.png" alt="">
+            </a>
+        </item>
+        <item id="right-item">
+            <p><strong>URN:</strong> 123456</p>
+            <p><strong>Patient Name:</strong> John Doe</p>
+            <p><strong>Date of model:</strong> 17.10.22</p>
+        </item>
+    </header>
+
+<section class="model">
+    <model-viewer id="prostateModel" shadow-intensity="1" src="Assets/labelled_Oct10v3.glb" camera-controls ar ios-src="Assets/labelled_Oct17v3.usdz">
+
+        <div id="position">
+            <button class=position-button data-orbit="356deg 79.43deg auto">Reset view</button>
+        </div>
+        
+    </model-viewer>
+</section>
+
+
+    <section id="transparency">
+
+
+        <h3><strong>Transparency</strong></h3>
+
+        <container id="sliders">
+            <table>
+                <tr>
+                    <td>
+                        <p>Labels:</p>
+                    </td>
+                    <td><input id="alpha-four" type="range" min="0" max="1" step="0.01" value="0.5"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>SUV10:</p>
+                    </td>
+                    <td><input id="alpha-one" type="range" min="0" max="1" step="0.01" value="0.5"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>SUV004:</p>
+                    </td>
+                    <td><input id="alpha-two" type="range" min="0" max="1" step="0.01" value="0.5"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Prostate:</p>
+                    </td>
+                    <td><input id="alpha-three" type="range" min="0" max="1" step="0.01" value="0.5"></td>
+                </tr>
+            </table>
+
+
+        </container>
+
+    </section>
+
+    <hr class="solid">
+
+    <section id="volume">
+
+        <table>
+            <tr>
+                <td>
+                    <p><strong>Prostate volume: </strong></p>
+                </td>
+                <td>
+                    <p>26.3 cc</p>
+                </td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+    <hr class="solid">
+
+
+    <section class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_01.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_02.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_03.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_04.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_05.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_06.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_07.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_08.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">9 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_09.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">10 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_10.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">11 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_11.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">12 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_12.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">13 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_13.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">14 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_14.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">15 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_15.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">16 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_16.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">17 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_17.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">18 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_18.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">19 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_19.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">20 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_20.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">21 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_21.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">22 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_22.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">23 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_23.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">24 / 24</div>
+            <img src="Assets/Image stack/GK SUV 0-15 AXIAL T2 n23 fusion 24-Sep-2021_Page_24.jpg" style="width:100%">
+
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#8593;</a>
+        <a class="next" onclick="plusSlides(1)">&#8595;</a>
+    </section>
+    <br>
+
+
+    <script type="module">
+        const modelViewer = document.querySelector("#prostateModel");
+        const annotationClicked = (annotation) => {
+            let dataset = annotation.dataset;
+            modelViewer.cameraTarget = dataset.target;
+            modelViewer.cameraOrbit = dataset.orbit;
+
+        }
+        const buttonSection = document.querySelector("#position")
+        buttonSection.querySelectorAll('button').forEach((hotspot) => {
+            hotspot.addEventListener('click', () => annotationClicked(hotspot));
+        });
+
+
+
+
+        let materialOne
+        let materialTwo
+        let materialThree
+        let materialLabels
+
+
+        const modelViewerTrans = document.querySelector("model-viewer#prostateModel");
+
+        modelViewer.addEventListener("load", () => {
+
+            materialOne = modelViewer.model.getMaterialByName("Material.001");
+            materialOne.setAlphaMode("BLEND");
+            // Defaults to base colour
+            materialOne.pbrMetallicRoughness.setBaseColorFactor([0.8, 0.02, 0.5, 0.5]);
+            // Adds slider interactivity
+            document.querySelector('#alpha-one').addEventListener('input', (event) => {
+                materialOne.pbrMetallicRoughness.setBaseColorFactor([0.8, 0.02, 0.5, (event.target.value)]);
+            });
+
+            materialTwo = modelViewer.model.getMaterialByName("Material.002");
+            materialTwo.setAlphaMode("BLEND");
+            // Default to base colour
+            materialTwo.pbrMetallicRoughness.setBaseColorFactor([0.8, 0.5, 0.8, 0.5]);
+            // Adds slider interactivity
+            document.querySelector('#alpha-two').addEventListener('input', (event) => {
+                materialTwo.pbrMetallicRoughness.setBaseColorFactor([0.8, 0.5, 0.8, (event.target.value)]);
+            });
+
+            materialThree = modelViewer.model.getMaterialByName("Material.003");
+            materialThree.setAlphaMode("BLEND");
+            // Defaults to base colour
+            materialThree.pbrMetallicRoughness.setBaseColorFactor([0.8, 0.5, 1, 0.5]);
+            // Adds slider interactivity
+            document.querySelector('#alpha-three').addEventListener('input', (event) => {
+                materialThree.pbrMetallicRoughness.setBaseColorFactor([0.8, 0.5, 1, (event.target.value)]);
+            });
+
+            console.log(modelViewer.model.materials);
+
+            materialLabels = modelViewer.model.getMaterialByName("Text");
+            materialLabels.setAlphaMode("BLEND");
+            // Default to base colour
+            materialLabels.pbrMetallicRoughness.setBaseColorFactor([0.5, 0.1, 0.8, 0.5]);
+            // Adds slider interactivity
+            document.querySelector('#alpha-four').addEventListener('input', (event) => {
+                materialLabels.pbrMetallicRoughness.setBaseColorFactor([0.5, 0.1, 0.8, (event.target.value)]);
+
+            });
+        })
+
+    </script>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
+
+</body>
+
+</html>
